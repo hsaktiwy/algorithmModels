@@ -11,7 +11,7 @@ typedef struct s_grid{
     vector<t_depo> points;
 }_grid;
 
-class SpetialHashGrid{
+class SpecialHashGrid{
     private:
         int width;
         int height;
@@ -22,7 +22,7 @@ class SpetialHashGrid{
         int contents;
         unordered_map<int, _grid> map;
     public:
-        SpetialHashGrid(int x, int y, int _cellWidth, int _cellHeight): width(x), height(y), cellWidth(_cellWidth), cellHeight(_cellHeight)
+        SpecialHashGrid(int x, int y, int _cellWidth, int _cellHeight): width(x), height(y), cellWidth(_cellWidth), cellHeight(_cellHeight)
         {
             maxCellWidthNum = width/cellWidth;
             maxCellHeightNum = height/cellHeight;
